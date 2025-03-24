@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GGE - Gang Game Evolution 🎮</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Score Container (défini une seule fois ici) -->
+  <div id="score-container">
+    <div id="multiplier"></div>
+    <div id="score-value">
+      <span class="level">Level: 0</span>
+      <span>⚡: 0</span>
+      <small>(High: 0)</small>
+      <span>Mission: 100 œufs</span>
+    </div>
+  </div>
+  <div id="players-counter">Players: 0</div>
+
+  <div id="homepage">
+    <h1 class="glitch-text-yellow">Are you ready ?</h1>
+    <input type="password" id="passwordInput" placeholder="Enter Password" />
+    <button id="submitPassword" class="glitch-button" aria-label="Submit password">Submit</button>
+    <div id="hint">Only good FRENs know the answer!</div>
+    <div id="error" style="display: none;">Incorrect password! Try again or Praise KEK</div>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <header>
+      <h1 class="glitch-text-yellow">Gang Game Evolution</h1>
+    </header>
+
+    <div id="minting-text">Minting in Progress</div>
+
+    <div id="progress-bar-container">
+      <div id="free-mint-container">
+        <div id="free-mint-indicator" class="glitch-text">690 Free Mint</div>
+      </div>
+      <div id="progress-bar">
+        <div id="free-mint-zone"></div>
+        <div id="progress"></div>
+        <div id="progress-text">0000/7687</div>
+      </div>
+    </div>
+  <div id="wallet-mint-container">
+  <button id="connectWallet" class="glitch-button" aria-label="Connect your wallet">Connect Wallet</button>
+  <div id="mint-container">
+    <button id="mintNFT" class="glitch-button" disabled aria-label="Mint your unique egg NFTs">Mint Your Unique Eggs</button>
+    <input type="number" id="mintQuantity" min="1" max="50" value="1" class="glitch-input" aria-label="Number of NFTs to mint" />
+  </div>
+</div>
+
+    <div class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeiaebjlafq64nhal6h3t4kscgl2q3hp72hw36cfgin665kyynkznbu">
+      </video>
+      <video autoplay loop muted playsinline>
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeihrqb5bg6zhr54ao3olygpuqmhm5b2idjvfmbutwqdgqapjjsih6e">
+      </video>
+      <video autoplay loop muted playsinline>
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeibudg5wip2gxhv7kt3vi73atkihhvvb4mfgxbqw54iobcnhykioti">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeicmszmlrde3fcbwjsbb2galzcunownag7hh4yzp2p2yfqwc3ubgrq">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeiabgjr7veeyzdmvmyczevat45amu7hcqmk45ryhstixavb74jjayi">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeihi4bh4vnqfuqm4d36dpy5jte4mrbdvnfdyxlqln4qr3fn6rlrazu">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeicibeoavq6tt3pgzbzpx4wyvmktcqkmp75ybsxsuiafya3kwuugy4">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeieuk3c3syofebiqecihae3nubaw2bprmyjeanhxefkoe6vrfzfwpu">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeia6qaaggjrpatbv2smq2yluca2m2ng6fnhxhgvsfc7jfqeyvnunk4">
+      </video>
+      <video autoplay loop muted playsinline class="extra-video">
+        <source src="https://717ba62886d24aaab5c9d1c296df3e32.ipfs.4everland.link/ipfs/bafybeiffynuexpmqfswcj7yj7zzwofnx2z6yqt3p625x75hdue2k6xswd4">
+      </video>
+    </div>
+
+    <p class="description glitch-text">GGE is a revolutionary NFT project where you can mint Unique Eggs that evolve into unique baby creatures. Each egg is a gateway to a new world of possibilities in the MEME Universe.</p>
+    <p class="description glitch-text"><strong class="glitch-text-yellow">How it works:</strong><br>1. Mint your Unique Eggs (up to 50 at once) with your connected wallet.<br>2. Collect 5 eggs to evolve them into a baby creature.<br>3. Raise your creatures, trade them, and participate in the Web3 ecosystem.</p>
+    <p class="description glitch-text"><strong class="glitch-text-yellow">Join the Gang:</strong><br>Become part of the Gang Game Evolution community and dominate the MEME Universe!</p>
+    <p class="description glitch-text"><strong class="glitch-text-yellow">WEN?:</strong><br>Phase 1: Launch of the GGE NFT collection.<br>Phase 2: MEME Generator & Introduction of creature evolution mechanics...<br>Phase 3: Community tournaments and trading marketplace.<br>Phase 4: Expansion into the broader Web3 based ecosystem.</p>
+    <p class="description glitch-text"><strong class="glitch-text-yellow">Infinite Meme Generator:</strong><br>Create and share memes using your GGE NFTs! Generate unique content, earn rewards, and grow the community through viral creativity.</p>
+
+    <div class="certificate-section">
+      <h2 class="glitch-text-yellow">Security Certificate</h2>
+      <p>GGE smart contract verified on the Based blockchain.</p>
+      <p>Contract Address: 0xAE6a76D106FD5F799a2501e1D563852Da88c3Db5</p>
+      <p><br>Energy<br>(SOON)Erc20: Liquidity Locked</p>
+    </div>
+
+    <div class="certificate-section">
+      <h2 class="glitch-text-yellow">Leaderboard - Top 10</h2>
+      <p>Top Frogs:</p>
+      <ul id="leaderboard-list"></ul>
+      <button id="shareScore" class="pixel-button glitch-text-yellow">Share Your Score</button>
+    </div>
+
+    <p class="description"><strong>Exclusively on <span class="glitch-text-yellow">based</span></strong></p>
+    <div class="gge-title glitch-text-yellow">gangamevolution.site</div>
+    <div class="social-links">
+      <a href="https://t.me/Gangamevolution_GGE" target="_blank" aria-label="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://x.com/YuG_PEPECOIN" target="_blank" aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="level-up-message" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; z-index: 1000;"></div>
+
+  <div class="audio-controls">
+    <button id="muteButton" aria-label="Toggle mute">🔊</button>
+    <input type="range" id="volumeSlider" aria-label="Volume control" min="0" max="1" step="0.01" value="0.15">
+  </div>
+
+  <!-- Load scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="sav.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'921cecfe8ef5b062',t:'MTc0MjIxOTA3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'924fe65efabeed8c',t:'MTc0Mjc1MzU3Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
