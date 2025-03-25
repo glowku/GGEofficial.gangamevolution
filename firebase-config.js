@@ -1,12 +1,12 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCgTK0b3C9bZ7Pe4NYKpPBCLKct1l6XZVM",
-  authDomain: "gangamevolution.firebaseapp.com",
-  databaseURL: "https://gangamevolution-default-rtdb.firebaseio.com",
+  apiKey: "-",
+  authDomain: "x",
+  databaseURL: "x",
   projectId: "gangamevolution",
-  storageBucket: "gangamevolution.firebasestorage.app",
+  storageBucket: "x",
   messagingSenderId: "794957521542",
-  appId: "1:794957521542:web:f6cfdff0edbc081da76707",
+  appId: "x",
   measurementId: "G-RRTMQMDCR1"
 };
 
